@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 98%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 47.4% 11.2%;
+  --border: 214.3 31.8% 91.4%;
+  --accent: 173.7 80.4% 40.2%;
+  --accent-foreground: 0 0% 100%;
+}
+
+.dark {
+  --background: 222.2 47.4% 8.8%;
+  --foreground: 210 40% 98%;
+  --muted: 222.2 47.4% 13.2%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --card: 222.2 47.4% 11.2%;
+  --card-foreground: 210 40% 98%;
+  --border: 215 28% 17%;
+  --accent: 173.7 80.4% 40.2%;
+  --accent-foreground: 0 0% 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-heading {
+  font-family: var(--font-space-grotesk), "Space Grotesk", Inter, system-ui, sans-serif;
+}
+
+::selection {
+  background: hsl(var(--accent) / 0.18);
+  color: hsl(var(--foreground));
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image:
+      radial-gradient(circle at top, rgba(20, 184, 166, 0.08), transparent 28%),
+      radial-gradient(circle at 85% 10%, rgba(20, 184, 166, 0.03), transparent 22%);
+    background-attachment: fixed;
+  }
+
+  .dark body {
+    background-image:
+      radial-gradient(circle at top, rgba(20, 184, 166, 0.08), transparent 28%),
+      radial-gradient(circle at 85% 10%, rgba(20, 184, 166, 0.04), transparent 22%);
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
