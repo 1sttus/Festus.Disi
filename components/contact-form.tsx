@@ -55,12 +55,12 @@ export function ContactForm() {
         </label>
         <label className="block text-sm font-medium text-foreground">
           Budget
-          <select className={fieldClass} name="budget" defaultValue="Let's discuss">
+          <select className={fieldClass} name="budget" defaultValue={"Let's discuss"}>
             <option>Under $1,000</option>
             <option>$1,000 - $5,000</option>
             <option>$5,000 - $10,000</option>
             <option>$10,000+</option>
-            <option>Let's discuss</option>
+            <option>{"Let's discuss"}</option>
           </select>
         </label>
       </div>

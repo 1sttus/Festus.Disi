@@ -72,7 +72,7 @@ export default function HomePage() {
           <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
             <div className="max-w-3xl">
               <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-muted px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-muted-foreground">
-                Creative Graphic Designer · Product Designer · Brand Consultant
+                Creative Graphic Designer | Product Designer | Brand Consultant
               </p>
               <h1 className="font-heading text-5xl font-semibold tracking-tighter text-foreground text-balance sm:text-6xl lg:text-7xl">
                 Designing Brands, Products &amp; Experiences That Matter.
@@ -196,10 +196,10 @@ export default function HomePage() {
                 <div className="rounded-[2rem] border border-border bg-card p-6 shadow-soft">
                   <p className="text-xs font-semibold uppercase tracking-[0.28em] text-accent">Experience</p>
                   <div className="mt-5 space-y-3 text-sm leading-7 text-muted-foreground">
-                    <p>• 10+ years of design practice</p>
-                    <p>• B.Sc. Computer Science</p>
-                    <p>• Branding, UI/UX, marketing, publication, and visual storytelling</p>
-                    <p>• Based in Warri, Delta State, Nigeria</p>
+                    <p>- 10+ years of design practice</p>
+                    <p>- B.Sc. Computer Science</p>
+                    <p>- Branding, UI/UX, marketing, publication, and visual storytelling</p>
+                    <p>- Based in Warri, Delta State, Nigeria</p>
                   </div>
                 </div>
 
@@ -393,7 +393,7 @@ export default function HomePage() {
             <div className="mt-12 grid gap-6 lg:grid-cols-3">
               {testimonials.map((testimonial) => (
                 <article key={testimonial.name} className="rounded-[2rem] border border-border bg-card p-6 shadow-soft sm:p-8">
-                  <p className="text-sm leading-8 text-muted-foreground">“{testimonial.quote}”</p>
+                  <p className="text-sm leading-8 text-muted-foreground">&ldquo;{testimonial.quote}&rdquo;</p>
                   <div className="mt-6 border-t border-border pt-5">
                     <p className="font-medium text-foreground">{testimonial.name}</p>
                     <p className="mt-1 text-sm text-muted-foreground">{testimonial.role}</p>
@@ -408,7 +408,7 @@ export default function HomePage() {
           <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
             <SectionHeading
               eyebrow="Contact"
-              title="Let's build something remarkable together."
+              title={"Let's build something remarkable together."}
               description="Whether the project is a brand refresh, a product interface, or a design system, the conversation can start here."
             />
 
@@ -483,7 +483,7 @@ export default function HomePage() {
             <p className="font-heading text-2xl font-semibold tracking-tighter text-foreground">{siteConfig.logo}</p>
             <p className="mt-2 text-sm text-muted-foreground">Designing meaningful brands and digital experiences.</p>
           </div>
-          <p className="text-sm text-muted-foreground">© 2026 DISI. All Rights Reserved.</p>
+          <p className="text-sm text-muted-foreground">&copy; 2026 DISI. All Rights Reserved.</p>
         </div>
       </footer>
     </div>

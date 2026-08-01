@@ -107,21 +107,21 @@ export const experience = [
   {
     role: "Head Graphic Designer / Media",
     company: "MorningStar Covenant International Church",
-    period: "2019 – Present",
+    period: "2019 - Present",
     description:
       "Leading visual communication, campaign graphics, publications, and digital content for church communications."
   },
   {
     role: "Freelance Designer & Brand Consultant",
     company: "Independent Practice",
-    period: "2018 – Present",
+    period: "2018 - Present",
     description:
       "Helping businesses, startups, ministries, and organizations shape clearer brands and more effective digital experiences."
   },
   {
     role: "Lead Graphic Designer",
     company: "Manifest Printing Press",
-    period: "2015 – 2016",
+    period: "2015 - 2016",
     description:
       "Produced print-ready artwork, publication layouts, and design assets with a strong focus on clarity and production quality."
   }
