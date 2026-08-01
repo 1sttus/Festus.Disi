@@ -1,0 +1,36 @@
+'Log files:
+C:\Users\Hp\Disi\.npm-cache\_logs\2026-08-01T01_14_06_065Z-debug-0.log
+
+# npm resolution error report
+
+While resolving: framer-motion@11.11.17
+Found: react@19.2.8
+node_modules/react
+  react@"^19.0.0" from the root project
+  peer react@"^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0" from next@15.5.22
+  node_modules/next
+    next@"15.5.22" from the root project
+  peer react@"^19.2.8" from react-dom@19.2.8
+  node_modules/react-dom
+    react-dom@"^19.0.0" from the root project
+    peer react-dom@"^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0" from next@15.5.22
+    node_modules/next
+      next@"15.5.22" from the root project
+  peer react@">= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0" from styled-jsx@5.1.6
+  node_modules/styled-jsx
+    styled-jsx@"5.1.6" from next@15.5.22
+    node_modules/next
+      next@"15.5.22" from the root project
+
+Could not resolve dependency:
+peerOptional react@"^18.0.0" from framer-motion@11.11.17
+node_modules/framer-motion
+  framer-motion@"11.11.17" from the root project
+
+Conflicting peer dependency: react@18.3.1
+node_modules/react
+  peerOptional react@"^18.0.0" from framer-motion@11.11.17
+  node_modules/framer-motion
+    framer-motion@"11.11.17" from the root project
+
+Fix the upstream dependency conflict, or retry this command with --force or --legacy-peer-deps to accept an incorrect (and potentially broken) dependency resolution.
